@@ -9,7 +9,7 @@ from nonebot.adapters.onebot.v11.message import Message
 from nonebot.matcher import Matcher
 from nonebot.params import EventMessage
 
-scramble = on_regex(r'.([234567])')
+scramble = on_regex(r'^\.([234567])$')
 
 @scramble.handle()
 async def _(matcher: Matcher, event: GroupMessageEvent, raw_message: Message = EventMessage()):

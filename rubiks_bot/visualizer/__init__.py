@@ -20,7 +20,7 @@ def render(fname, size: int, cubeWidth: float, alg: str):
         'F': (0, 221, 0),
     }
 
-    with Image.new("RGB", (int(cubeWidth * 4.3), int(cubeWidth * 3.2))) as im:
+    with Image.new("RGBA", (int(cubeWidth * 4.3), int(cubeWidth * 3.2))) as im:
         draw = ImageDraw.Draw(im)
         for group in puzzleGeometry.getGroup().objects:
             for obj in group.objects:
