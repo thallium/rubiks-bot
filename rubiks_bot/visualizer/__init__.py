@@ -30,4 +30,4 @@ def render(fname, size: int, cubeWidth: float, alg: str):
                     outline=(0, 0, 0),
                     width=3)
 
-        im.save(fname)
+        im.save(fname, format="PNG")
