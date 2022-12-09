@@ -18,4 +18,4 @@ async def _(matcher: Matcher, event: GroupMessageEvent, raw_message: Message = E
     scramble_str = generateScramble(size)
     scramble_img = io.BytesIO()
     render(scramble_img, size, 100, scramble_str)
-    await matcher.finish(scramble_str + MessageSegment.image(scramble_img))
+    await matcher.finish(scramble_str + '\n' + MessageSegment.image(scramble_img))
