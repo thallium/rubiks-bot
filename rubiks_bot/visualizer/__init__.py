@@ -28,6 +28,6 @@ def render(fname, size: int, cubeWidth: float, alg: str):
                     ((obj.x, obj.y), (obj.x + obj.length, obj.y + obj.length)),
                     fill=colorTable[obj.color],
                     outline=(0, 0, 0),
-                    width=3)
+                    width=2)
 
         im.save(fname, format="PNG")
